@@ -108,23 +108,23 @@ def valid_email(email):
 #signup mainhandler
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        error_username = ""
-        error_password = ""
-        error_verify = ""
-        error_email = ""
-        username = ""
-        email = ""
+        params['error_username'] = ""
+        params['error_password'] = ""
+        params['error_verify'] = ""
+        params['error_email'] = ""
+        params['username'] = ""
+        params['email'] = ""
 
         content = build_page("",params)
         self.response.write(content)
 
     def post(self):
-        error_username = ""
-        error_password = ""
-        error_verify = ""
-        error_email = ""
-        username = ""
-        email = ""
+        params['error_username'] = ""
+        params['error_password'] = ""
+        params['error_verify'] = ""
+        params['error_email'] = ""
+        params['username'] = ""
+        params['email'] = ""
 
 
         is_error = False
